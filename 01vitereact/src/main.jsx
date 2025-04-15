@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import React from 'react'
+import {jsx as _jsx} from "react/jsx-runtime.js"
 import App from './App.jsx'
 
 // const anotherElement = (
