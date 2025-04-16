@@ -1,6 +1,6 @@
 import React from 'react'
 
-function card({username, imgSrc, intro, btnText, btnLink}) {
+function Card({username, imgSrc, intro, btnText, btnLink}) {
     console.log(username);
     
   return (
@@ -29,4 +29,4 @@ function card({username, imgSrc, intro, btnText, btnLink}) {
   )
 }
 
-export default card
+export default Card
