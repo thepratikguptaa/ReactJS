@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({username, imgSrc, intro, btnText, btnLink}) {
+function Card({username, imgSrc, intro, btnText="Empty button", btnLink}) {
     console.log(username);
     
   return (
