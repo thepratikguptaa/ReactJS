@@ -1,0 +1,9 @@
+.animate-copy {
+  transform: scale(1.1);
+  background-color: #4caf50; /* Green color for success */
+  color: white;
+}
+
+button {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
