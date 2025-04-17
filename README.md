@@ -8,4 +8,4 @@ Background Changer:
 https://react-js-jm74.vercel.app/
 
 Password Generator:
-https://password-generator-thepratikguptaas-projects.vercel.app/
+https://password-generator-thepratikguptaas-projects.vercel.app/ (personal favourite)
