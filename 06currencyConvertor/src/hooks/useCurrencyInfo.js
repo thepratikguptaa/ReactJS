@@ -9,8 +9,9 @@ function useCurrencyInfo(currency){
             .then(data => {
                 setData(data);
             });
-    }, []);
-
+            console.log(data);
+    }, [currency]);
+    console.log(data);
     return data;
 }
 
