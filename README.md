@@ -8,4 +8,7 @@ Background Changer:
 https://react-js-jm74.vercel.app/
 
 Password Generator:
-https://password-generator-thepratikguptaas-projects.vercel.app/ (personal favourite)
+https://password-generator-thepratikguptaas-projects.vercel.app/
+
+Theme Toggle in Card using Context API:
+https://theme-toggle-thepratikguptaas-projects.vercel.app/ (personal favourite)
