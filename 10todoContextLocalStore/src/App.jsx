@@ -1,4 +1,3 @@
-import './App.css'
 import React, { useEffect, useState } from 'react'
 import { TodoProvider } from './context/TodoContext'
 import TodoForm from './components/TodoForm'
