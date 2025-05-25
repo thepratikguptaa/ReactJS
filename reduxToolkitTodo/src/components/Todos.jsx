@@ -2,17 +2,21 @@ import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import {removeTodo} from '../features/todo/todoSlice'
 
+// This component displays the list of todos
+// Handles editing and deleting todos
 function Todos() {
-    const todos = useSelector(state => state.todo.todos)
+    const todos = useSelector(state => state.todo.todos) // Get todos from Redux store
     const dispatch = useDispatch()
-    const [editId, setEditId] = useState(null)
-    const [editValue, setEditValue] = useState("")
+    const [editId, setEditId] = useState(null) // Track which todo is being edited
+    const [editValue, setEditValue] = useState("") // Store the value while editing
 
+  // Start editing a todo
   const handleEdit = (todo) => {
     setEditId(todo.id)
     setEditValue(todo.text)
   }
 
+  // Save the edited todo
   const handleSave = (id) => {
     if (editValue.trim()) {
       dispatch({ type: 'todo/updateTodo', payload: { id, text: editValue } })
