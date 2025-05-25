@@ -10,7 +10,7 @@ function App() {
     setTodos((prevTodos) => [{id: Date.now(), ...todo}, ...prevTodos])
   }
 
-  const updatedTodo = (id, todo) => {
+  const updateTodo = (id, todo) => {
     setTodos((prevTodos) => 
       prevTodos.map((item) => (item.id === id ? todo : item)))
   }
@@ -36,7 +36,7 @@ function App() {
   }, [todos])
 
   return (
-    <TodoProvider value={{todos, addTodo, deleteTodo, updatedTodo, toggleComplete}}>
+    <TodoProvider value={{todos, addTodo, deleteTodo, updateTodo, toggleComplete}}>
       <div className="bg-[#15243a] min-h-screen flex items-center justify-center py-8 px-5 sm:px-0">
             <div className="w-full max-w-2xl mx-auto shadow-lg rounded-lg px-4 py-1 bg-[#18417f] text-white">
                 <h1 className="text-2xl font-bold text-center mb-2 mt-2">Manage Your Todos</h1>
